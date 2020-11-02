@@ -3,9 +3,20 @@
     padding: 0;
 }
 
-html, body {margin: 0; height: 100%; min-height: 100%; background-color: #2b2b2b;}
+html, body {margin: 0; height: 100%; min-height: 100%; background-color: white;}
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 993px) {
+    nav {
+        overflow: hidden;
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top:50%;
+        width: 100%;
+        margin-top: -100px;
+    }
     .hamburger {
         display: none;
     }
@@ -14,9 +25,8 @@ html, body {margin: 0; height: 100%; min-height: 100%; background-color: #2b2b2b
 @media only screen and (max-width: 992px) {
     nav {
         margin: 10px 10px;
-    }
-    .Join-button {
-        display: none;
+        top: 0;
+        background-color: none;
     }
     .nav-ul {
         display: none;
@@ -34,54 +44,33 @@ html, body {margin: 0; height: 100%; min-height: 100%; background-color: #2b2b2b
 
     .hamburger {
         display: block;
+        float: right;
     }
 }
 
-nav h1 {
-    font-family: "Varela Round";
-    font-style: bold;
-    font-size: 32px;
-    color: #ffffff;
-} 
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-}
 
 nav ul {
-    list-style-type: none;
-    margin: 10px 10px;
+
+    flex-direction: column;
     overflow: hidden;
     text-align: center;
-}
-  
-nav ul li {
-    float: left;
+    float: right;
 }
   
 nav ul li a {
-    display: inline-block;
-    color: white;
+    display: block;
+    color: black;
     font-family: "Lato";
     font-size: 18px;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     text-decoration: none;
-    transition: 0.3s;
 }
 
-nav ul li a:hover {
-    color: #E94560;
-    transition: 0.3s;
-}
 
 .hamburger {
     background-color: transparent;
-    color: #E94560;
+    color: black;
     border: 0;
     font-size: 36px;
     cursor: pointer;
@@ -94,7 +83,7 @@ nav ul li a:hover {
 .Avatar {
     font-family: Lato;
     font-size: 24px;
-    color: #ffffff;
+    color: black;
     text-align: center;
     position: relative;
     display: block;
@@ -113,9 +102,7 @@ nav ul li a:hover {
 .title {
     margin: 100px auto;
     padding: 100px 0px;
-    background-color:#E94560;
-    box-shadow: 0 0px 15px #E94560;
-    color: white;
+    color: black;
     font-style: bold;
     width: 100%;
     text-align: center;
@@ -124,7 +111,7 @@ nav ul li a:hover {
 }
 
 p {
-    color: #ffffff;
+    color: black;
     font-family: Lato;
     font-size: 24px;
     padding-left: 30px;
