@@ -6,13 +6,23 @@ Workshop Facilitators: Nguyen Hoang Trung Dung, Huynh Vu Khoi Nguyen.
 In this workshop, you will know how to build your own online resume on the web for everyone to see. You will have basic knowledge on Git commands, HTML, CSS, and a little bit JavaScript.
 
 ## Usage
-Feel free to use this project to modify and make it your own.
+Feel free to use this template to modify and make it your own.
 
-You can either clone this repository
+1. First download the ZIP file and initialize an emty git in the folder
 ```bash
-git clone https://github.com/vinmakersoc/online-resume-workshop.git
+cd online-resume-template-master/
+git init
 ```
-or download the zip file.
+
+2. Create a new repository on Github
+
+```bash
+git remote add origin "your repository's link"
+git add .
+git commit -m "First Commit"
+git push origin master
+```
+
 
 ## License
 MIT License
