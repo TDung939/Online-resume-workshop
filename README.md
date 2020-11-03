@@ -8,13 +8,20 @@ In this workshop, you will know how to build your own online resume on the web f
 ## Usage
 Feel free to use this template to modify and make it your own.
 
-1. First download the ZIP file
+1. First download the ZIP file and initialize an emty git in the folder
 ```bash
 cd online-resume-template-master/
 git init
 ```
 
-2. Create a new repository on Github 
+2. Create a new repository on Github
+
+```bash
+git remote add origin "your repository's link"
+git add .
+git commit -m "First Commit"
+git push origin master
+```
 
 
 ## License
