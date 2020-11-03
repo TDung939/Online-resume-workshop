@@ -16,12 +16,16 @@ git init
 
 2. Create a new repository on Github
 
+3. Copy these commands to your terminal
 ```bash
 git remote add origin "your repository's link"
 git add .
 git commit -m "First Commit"
 git push origin master
 ```
+4. Go to Settings -> Github Pages and choose master branch as root
+
+5. Go to your link
 
 
 ## License
