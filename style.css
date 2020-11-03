@@ -7,15 +7,9 @@ html, body {margin: 0; height: 100%; min-height: 100%; background-color: #f1f6f9
 
 @media only screen and (min-width: 993px) {
     nav {
-        overflow: hidden;
-        display: block;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+        background-color: #14274e;
         position: fixed;
-        top: 0;
         width: 100%;
-        z-index: 9;
     }
     .hamburger {
         display: none;
@@ -24,11 +18,13 @@ html, body {margin: 0; height: 100%; min-height: 100%; background-color: #f1f6f9
 }
 @media only screen and (max-width: 992px) {
     nav {
-        margin: 10px 10px;
+        position: fixed;
+        width: 100%;
         top: 0;
-        background-color: none;
+        background: none;
     }
     .nav-ul {
+        margin: 100px auto;
         display: none;
         width: 100%;
         flex-direction: column;
@@ -37,22 +33,17 @@ html, body {margin: 0; height: 100%; min-height: 100%; background-color: #f1f6f9
 
     .nav-ul.show {
         display: flex;
-        background-color:  #E94560;
-        backdrop-filter: blur(5px);
+        background-color: #14274e;
         border-radius: 6px;
     }
 
     .hamburger {
+        margin: 10px 10px;
         display: block;
         float: right;
     }
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    background-color: #14274e;
-}
 
 nav ul {
     list-style-type: none;
@@ -65,27 +56,37 @@ nav ul {
   
 nav ul li a {
     display: block;
-    color: #9ba4b4;
+    color: white;
     font-family: "Lato";
     font-size: 18px;
     text-align: center;
     margin: 20px 50px ;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: #9ba4b4;
+    transition: 0.5s;
 }
 
 .Avatar {
-    font-family: Lato;
-    font-size: 24px;
     color: black;
-    text-align: center;
-    display: block;
     width: 100%;
+    text-align: center;
+    display: inline-block;
     padding-top: 50px;
+}
+
+.Avatar p {
+    color: #394867;
+    font-family: "Lato";
+    font-size: 24px;
 }
 
 #avatar {
     margin-top: 50px;
-    width: 20%;
+    border-radius:50%;
 } 
 
 
